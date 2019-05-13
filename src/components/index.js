@@ -1,6 +1,5 @@
 /**
  * 路由组件出口文件
- * yezi 2018年6月24日
  */
 import Loadable from 'react-loadable';
 import Loading from './widget/Loading';
@@ -19,6 +18,7 @@ import Tabs from './ui/Tabs';
 import Banners from './ui/banners';
 import Drags from './ui/Draggable';
 import Dashboard from './dashboard/Dashboard';
+import Portfolio from './dashboard/portfolio';
 import Gallery from './ui/Gallery';
 import BasicAnimations from './animation/BasicAnimations';
 import ExampleAnimations from './animation/ExampleAnimations';
@@ -34,9 +34,28 @@ const WysiwygBundle = Loadable({ // 按需加载富文本配置
 });
 
 export default {
-    BasicForm, BasicTable, AdvancedTable, AsynchronousTable,
-    Echarts, Recharts, Icons, Buttons, Spins, Modals, Notifications,
-    Tabs, Banners, Drags, Dashboard, Gallery, BasicAnimations,
-    ExampleAnimations, AuthBasic, RouterEnter, WysiwygBundle,
-    Cssmodule, MapUi, QueryParams
+    Dashboard,
+    Portfolio,
+    // BasicForm,
+    // BasicTable,
+    // AdvancedTable,
+    // AsynchronousTable,
+    // Echarts,
+    // Recharts,
+    // Icons,
+    // Buttons,
+    // Spins,
+    // Modals,
+    // Notifications,
+    // Tabs,
+    // Drags,
+    // Gallery,
+    // BasicAnimations,
+    // ExampleAnimations,
+    // AuthBasic,
+    // RouterEnter,
+    // WysiwygBundle,
+    // Cssmodule,
+    // MapUi,
+    // QueryParams
 }

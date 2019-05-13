@@ -70,7 +70,6 @@ class SiderCustom extends Component {
                 collapsed={collapsed}
                 style={{ overflowY: 'auto' }}
             >
-                <div className="logo" />
                 <SiderMenu
                     menus={routes.menus}
                     onClick={this.menuClick}

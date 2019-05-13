@@ -26,12 +26,6 @@ body {
 }
 .ant-layout{
   height: 100%;
-  .logo{
-    height: 32px;
-    background: #ffffff;
-    border-radius: 6px;
-    margin: 16px;
-  }
   .ant-layout-sider-collapsed{
     .anticon{
       font-size: 16px;
@@ -68,5 +62,14 @@ body {
 :global {
   .ant-card-head-title {
     font-size: 14px !important;
+  }
+}
+
+
+@media (min-width: 768px){
+  .ant-col-md-4 {
+      display: block;
+      box-sizing: border-box;
+      width: 33%;
   }
 }

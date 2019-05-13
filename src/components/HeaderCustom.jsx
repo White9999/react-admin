@@ -3,17 +3,17 @@
  */
 import React, { Component } from 'react';
 import screenfull from 'screenfull';
-import avater from '../style/imgs/b1.jpg';
+// import avater from '../style/imgs/b1.jpg';
 import SiderCustom from './SiderCustom';
 import { Menu, Icon, Layout, Badge, Popover } from 'antd';
 import { gitOauthToken, gitOauthInfo } from '../axios';
 import { queryString } from '../utils';
 import { withRouter } from 'react-router-dom';
-import { PwaInstaller } from './widget';
+// import { PwaInstaller } from './widget';
 import { connectAlita } from 'redux-alita';
 const { Header } = Layout;
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
+// const SubMenu = Menu.SubMenu;
+// const MenuItemGroup = Menu.ItemGroup;
 
 class HeaderCustom extends Component {
     state = {
@@ -63,8 +63,12 @@ class HeaderCustom extends Component {
     render() {
         const { responsive = { data: {} }, path } = this.props;
         return (
-            <Header className="custom-theme header" >
-                {
+            <Header className="custom-theme header" style={{background:"#f0f2f5"}} >
+            <h2 style={{paddingLeft:"20px",fontWeight:"bold"}}>Investment</h2>
+
+
+
+                {/* {
                     responsive.data.isMobile ? (
                         <Popover content={<SiderCustom path={path} popoverHide={this.popoverHide} />} trigger="click" placement="bottomLeft" visible={this.state.visible} onVisibleChange={this.handleVisibleChange}>
                             <Icon type="bars" className="header__trigger custom-trigger" />
@@ -75,9 +79,9 @@ class HeaderCustom extends Component {
                             type={this.props.collapsed ? 'menu-unfold' : 'menu-fold'}
                             onClick={this.props.toggle}
                         />
-                    )
-                }
-                <Menu
+                    )  
+                } */}
+                {/* <Menu
                     mode="horizontal"
                     style={{ lineHeight: '64px', float: 'right' }}
                     onClick={this.menuClick}
@@ -104,7 +108,7 @@ class HeaderCustom extends Component {
                             <Menu.Item key="setting:4">系统设置</Menu.Item>
                         </MenuItemGroup>
                     </SubMenu>
-                </Menu>
+                </Menu> */}
             </Header>
         )
     }
